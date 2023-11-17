@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            height: 100%;
+        }
+        
+        .container{
+            background-color: blue;
+            display: flex;
+            height: 100%;
+            justify-content:space-around;/*Horizonta*//*Flex-start, flex-end, center*/ 
+            align-items: center;/*Vertical*//*flex-start, flex-end, center*/
+            flex-direction: row;/*row ou column */
+            flex-wrap: wrap;/*wrap, nowrap*/
+        }
+        .filha{
+            display: flex;
+            background-color: red;
+            width: 40%;
+            height: 200px;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="filha">1</div>
+        <div class="filha">2</div>
+        <div class="filha">3</div>
+    </div>
+</body>
+</html>
